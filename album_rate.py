@@ -38,22 +38,24 @@ if __name__ == "__main__":
     albums = {1: {"title":"Blond", "artist":"Frank Ocean", "genre":"Contemporary R&B", "rating":98},
               2: {"title":"Call Me If You Get Lost", "artist":"Tyler the Creator", "genre":"Hip-Hop / Rap", "rating":97},
               3: {"title":"Ctrl", "artist":"SZA", "genre":"R&B / Soul", "rating":98}}
-    mode = int(input("\nMenu \n"
+    while True:
+        mode = int(input("\nMenu \n"
                      "1. Print out all albums \n"
                      "2. Add an album \n"
                      "3. Delete an album \n"
                      "4. Edit an album\n"
                      "5. Rate an album \n"
                          "6. Exit \n"))
-    if mode == 1:
-        printing(albums)
-    elif mode == 2:
-        add(albums)
-    elif mode == 3:
-        delete(albums)
-    elif mode == 4:
-        edit(albums)
-    elif mode == 5:
-        rate(albums)
-    #elif mode == 6:
+        if mode == 1:
+            printing(albums)
+        elif mode == 2:
+            add(albums)
+        elif mode == 3:
+            delete(albums)
+        elif mode == 4:
+            edit(albums)
+        elif mode == 5:
+            rate(albums)
+        elif mode == 6:
+            break
        
